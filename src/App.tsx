@@ -2,13 +2,12 @@ import { useEffect, useState, useRef } from "react";
 import axios, { AxiosResponse as AxiosResponseType } from "axios";
 import { RotatingSquare } from "react-loader-spinner";
 import toast from "react-hot-toast";
-
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import SearchBar from "./components/SearchBar/SearchBar";
 import "./App.css";
 import ImageModal from "./components/ImageModal/ImageModal.jsx";
-import { Image, ModalParams } from "./types";
+import { Image, ModalParams } from "./types.js";
 
 interface ApiResponse {
   total: number;
