@@ -64,7 +64,7 @@ function App() {
   }
   useEffect(() => {
     if (!query) return;
-    async function fetchImages<AxiosResponse>(): Promise<void> {
+    async function fetchImages() {
       try {
         setLoading(true);
         setLoadMore(false);
